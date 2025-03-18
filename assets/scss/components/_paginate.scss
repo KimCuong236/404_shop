@@ -1,0 +1,27 @@
+.paginate {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 38px;
+  padding-top: 30px;
+  button {
+    padding: 15px 24px;
+    border-radius: 10px;
+    background: #f9f1e7;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+  }
+}
+
+ul li button:hover {
+  border-radius: 10px;
+  background: var(--Primary, #b88e2f);
+  color: #fff;
+}
