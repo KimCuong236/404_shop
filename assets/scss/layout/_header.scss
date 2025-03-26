@@ -1,14 +1,33 @@
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 1em;
-	text-align: center;
-	h1 {
-		font-size: 2em;
-		margin: 0;
-	}
-	p {
-		font-size: 1.2em;
-		margin: 0;
-	}
-}
+.header
+		{
+		width: 650px;
+		
+		background-color: white
+		}
+.logo{
+	color: #000;
+
+	font-family: Montserrat;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+		}
+.link
+	{
+		background-color: white;
+  		margin: 10px;
+  		padding: 20px;
+  		font-size: 20px;
+		width: 380px;
+		text-align: center;
+		color: black;
+		word-spacing: 40px;
+		}
+.icon
+			{
+				width: 28px;
+				height: 28px;
+				flex-shrink: 0;
+			}
+

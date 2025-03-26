@@ -185,19 +185,43 @@ h6 {
   font-weight: 800;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.logo {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 380px;
   text-align: center;
+  color: black;
 }
-header h1 {
-  font-size: 2em;
-  margin: 0;
+
+.link {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  width: 380px;
+  text-align: center;
+  color: black;
+  word-spacing: 40px;
 }
-header p {
-  font-size: 1.2em;
-  margin: 0;
+
+.icon {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  width: 380px;
+  text-align: center;
+  color: black;
+  word-spacing: 30px;
 }
 
 footer {
