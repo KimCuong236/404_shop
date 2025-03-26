@@ -1,0 +1,63 @@
+.breadcrumbs {
+  margin: auto;
+  .banner_breadcrumbs img {
+    width: 100%;
+    position: relative;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    top: 25%;
+    right: 45%;
+    padding: 20px;
+    h3 {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      // font-family: "Poppins", sans-serif;
+    }
+    .home_breadcrumbs {
+      font-weight: 1000;
+    }
+    i {
+      margin: 5px;
+    }
+  }
+}
+
+// =========== phần dưới của banner ============
+
+.under_banner {
+  display: flex;
+  justify-content: space-around;
+  // padding-top: 5px;
+  background-color: rgb(251, 221, 182);
+  align-items: center;
+  padding: 20px;
+  .left {
+    display: flex;
+    gap: 30px;
+  }
+  .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .show {
+    padding: 10px;
+  }
+  .input_show {
+    width: 55px;
+    padding: 10px;
+  }
+  .input_short_by {
+    width: 155px;
+    padding: 10px;
+  }
+}
