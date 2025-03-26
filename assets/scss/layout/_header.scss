@@ -1,16 +1,17 @@
 .header
 		{
-		display: flex;
+		width: 650px;
+		
 		background-color: white
 		}
 .logo{
-		background-color: white;
-  		margin: 10px;
-  		padding: 20px;
-  		font-size: 30px;
-		width: 380px;
-		text-align: center;
-		color: black;
+	color: #000;
+
+	font-family: Montserrat;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 		}
 .link
 	{
@@ -25,13 +26,8 @@
 		}
 .icon
 			{
-			background-color: white;
-			margin: 10px;
-			padding: 20px;
-			font-size: 20px;
-			width: 380px;
-			text-align: center;
-			color: black;
-			word-spacing: 30px;
+				width: 28px;
+				height: 28px;
+				flex-shrink: 0;
 			}
 
