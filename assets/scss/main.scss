@@ -32,6 +32,9 @@
 @import "components/productList";
 @import "components/services";
 
+@import "components/productComparison";
+
+
 // 6. Pages - SCSS riêng cho từng trang
 @import "pages/about";
 @import "pages/cart";
@@ -41,6 +44,7 @@
 @import "pages/order";
 @import "pages/productDetail";
 @import "pages/checkout";
+@import "pages/blog";
 
 // 7. Themes - Chủ đề giao diện
 @import "themes/dark";
