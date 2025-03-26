@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="checkout">
+        <form class="checkout-form">
+          <h3>Billing details</h3>
+          <div class="name-group">
+            <div class="first-name">
+              <p>First Name</p>
+              <input type="text" />
+            </div>
+            <div class="last-name">
+              <p>Last Name</p>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="company-name">
+            <p>Company Name (Optional)</p>
+            <input class="check-form-input" type="text" />
+          </div>
+          <div class="country">
+            <p>Country / Region</p>
+            <select class="check-form-select">
+              <option value="">Sri Lanka</option>
+            </select>
+          </div>
+          <div class="street-address">
+            <p>Street address</p>
+            <input class="check-form-input" type="text" />
+          </div>
+          <div class="town-city">
+            <p>Town / City</p>
+            <input class="check-form-input" type="text" />
+          </div>
+          <div class="province">
+            <p>Province</p>
+            <select class="check-form-select">
+              <option value="">Western Province</option>
+            </select>
+          </div>
+          <div class="zip-code">
+            <p>ZIP code</p>
+            <input class="check-form-input" type="text" />
+          </div>
+          <div class="phone">
+            <p>Phone</p>
+            <input class="check-form-input" type="text" />
+          </div>
+          <div class="email-address">
+            <p>Email address</p>
+            <input class="check-form-input" type="text" />
+          </div>
+          <div class="additional">
+            <input
+              class="check-form-input"
+              type="text"
+              placeholder="Additional information"
+            />
+          </div>
+        </form>
+        <div class="checkout-total">
+          <div class="checkout-total-list">
+            <div class="checkout-total-list-title">
+              <h4 class="checkout-total-title">Product</h4>
+
+              <p class="checkout-total-list-printed-faintly">Asgaard sofa</p>
+
+              <p class="checkout-total-name-center">Subtotal</p>
+
+              <p>Total</p>
+            </div>
+            <div class="checkout-total-list-price">
+              <h4 class="checkout-total-title">Subtotal</h4>
+              <p>Rs. 250,000.00</p>
+              <p class="checkout-total-price-center">Rs. 250,000.00</p>
+              <p class="checkout-total-price-to-pay">Rs. 250,000.00</p>
+            </div>
+          </div>
+          <div class="checkout-total-radio">
+            <label
+              ><input type="radio" name="category" value="1" /> Direct Bank
+              Transfer</label
+            >
+            <label
+              ><input type="radio" name="category" value="2" /> Installment
+              payment</label
+            >
+            <label
+              ><input type="radio" name="category" value="3" /> Cash On
+              Delivery</label
+            >
+          </div>
+          <div class="checkout-total-p">
+            <p>
+              Your personal data will be used to support your experience
+              throughout this website, to manage access to your account, and for
+              other purposes described in our <span>privacy policy.</span>
+            </p>
+          </div>
+          <div class="checkout-total-button">
+            <button>Place order</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
