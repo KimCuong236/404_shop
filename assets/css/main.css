@@ -186,6 +186,7 @@ h6 {
   font-weight: 800;
 }
 
+
 header {
   background-color: #333;
   color: #fff;
@@ -199,6 +200,44 @@ header h1 {
 header p {
   font-size: 1.2em;
   margin: 0;
+=======
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.logo {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 380px;
+  text-align: center;
+  color: black;
+}
+
+.link {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  width: 380px;
+  text-align: center;
+  color: black;
+  word-spacing: 40px;
+}
+
+.icon {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  width: 380px;
+  text-align: center;
+  color: black;
+  word-spacing: 30px;
 }
 
 footer {
@@ -218,6 +257,7 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+
 }
 
 .breadcrumbs {
@@ -470,4 +510,4 @@ th:first-child {
 td:last-child,
 th:last-child {
   border-right: none;
-}
+  }
