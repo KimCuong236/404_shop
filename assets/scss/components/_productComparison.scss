@@ -1,0 +1,119 @@
+.comparison {
+  margin: 0 54px;
+}
+.comparison_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 96px;
+  .comparison_top_left {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .comparison_title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126.5%;
+    // margin-bottom: 20px;
+  }
+  .view_comparison {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(188, 180, 180);
+    display: inline-block; /* Giúp phần tử không xuống dòng */
+    border-bottom: 1px solid rgb(188, 180, 180);
+    padding-bottom: 2px; /* Khoảng cách giữa chữ và gạch chân */
+    text-align: center;
+    white-space: nowrap; /* Ngăn text xuống dòng */
+  }
+}
+.comparison_top_mid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  p,
+  .price {
+    font-weight: 600;
+    margin: 10px 0;
+  }
+}
+
+.comparison_mid_left,
+.comparison_top_right {
+  position: relative; /* Cần thêm vào */
+}
+
+.comparison_mid_left .bgImage,
+.comparison_top_right .bgImage2 {
+  width: 100%; /* Đảm bảo ảnh nền không bị lệch */
+}
+
+.comparison_mid_left .image {
+  position: absolute;
+  left: 48%;
+  top: -17%;
+  transform: translateX(-50%); /* Giữ hình ảnh cân đối */
+}
+
+.comparison_top_right .image2 {
+  position: absolute;
+  left: 48%;
+  top: -17%;
+  transform: translateX(-50%);
+}
+
+.comparison_top_right {
+  p {
+    // font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  select {
+    background-color: #b88e2f;
+    width: 182px;
+    height: 39px;
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  border-top: 1px solid #ddd; /* Giữ viền trên */
+  border-bottom: 1px solid #ddd; /* Giữ viền dưới */
+  border-left: none; /* Xóa viền trái */
+  border-right: none; /* Xóa viền phải */
+  margin: 90px;
+  .weight {
+    font-weight: 600;
+  }
+}
+
+td {
+  padding: 20px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  width: 400px;
+  text-align: center;
+}
+
+th {
+  //   background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Bỏ viền trái của cột đầu tiên */
+td:first-child,
+th:first-child {
+  border-left: none;
+}
+
+/* Bỏ viền phải của cột cuối cùng */
+td:last-child,
+th:last-child {
+  border-right: none;
+}
