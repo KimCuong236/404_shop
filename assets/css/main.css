@@ -138,7 +138,7 @@ table {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -186,7 +186,6 @@ h6 {
   font-weight: 800;
 }
 
-
 header {
   background-color: #333;
   color: #fff;
@@ -200,314 +199,350 @@ header h1 {
 header p {
   font-size: 1.2em;
   margin: 0;
-=======
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
+
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+  }
+
+  .logo {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 380px;
+    text-align: center;
+    color: black;
+  }
+
+  .link {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    width: 380px;
+    text-align: center;
+    color: black;
+    word-spacing: 40px;
+  }
+
+  .icon {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    width: 380px;
+    text-align: center;
+    color: black;
+    word-spacing: 30px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumbs {
+    margin: auto;
+  }
+  .breadcrumbs .banner_breadcrumbs img {
+    width: 100%;
+    position: relative;
+  }
+  .breadcrumbs .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+    padding: 20px;
+  }
+  .breadcrumbs .text h3 {
+    text-align: center;
+  }
+  .breadcrumbs .text a {
+    text-decoration: none;
+    color: black;
+  }
+  .breadcrumbs .text .home_breadcrumbs {
+    font-weight: 1000;
+  }
+  .breadcrumbs .text i {
+    margin: 5px;
+  }
+
+  .under_banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: rgb(251, 221, 182);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .under_banner .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .under_banner .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .under_banner .show {
+    padding: 10px;
+  }
+  .under_banner .input_show {
+    width: 55px;
+    padding: 10px;
+  }
+  .under_banner .input_short_by {
+    width: 155px;
+    padding: 10px;
+  }
+
+  ._hero {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  ._hero .img-banner img {
+    width: 100%;
+  }
+
+  .info {
+    position: absolute;
+    top: 55%;
+    right: 13%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff3e3;
+    padding: 53px;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  .info h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+    color: #bd8150;
+    padding: 20px 0;
+  }
+  .info .text-1 p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .info .text-2 {
+    font-size: 16px;
+    color: #000;
+  }
+  .info .button-header {
+    margin-top: 50px;
+  }
+  .info .button-hero-header {
+    background: #c78855;
+    color: white;
+    padding: 25px 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .comparison {
+    margin: 0 54px;
+  }
+
+  .comparison_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 96px;
+  }
+  .comparison_top .comparison_top_left {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .comparison_top .comparison_title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126.5%;
+  }
+  .comparison_top .view_comparison {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(188, 180, 180);
+    display: inline-block; /* Giúp phần tử không xuống dòng */
+    border-bottom: 1px solid rgb(188, 180, 180);
+    padding-bottom: 2px; /* Khoảng cách giữa chữ và gạch chân */
+    text-align: center;
+    white-space: nowrap; /* Ngăn text xuống dòng */
+  }
+
+  .comparison_top_mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .comparison_top_mid p,
+  .comparison_top_mid .price {
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  .comparison_mid_left,
+  .comparison_top_right {
+    position: relative; /* Cần thêm vào */
+  }
+
+  .comparison_mid_left .bgImage,
+  .comparison_top_right .bgImage2 {
+    width: 100%; /* Đảm bảo ảnh nền không bị lệch */
+  }
+
+  .comparison_mid_left .image {
+    position: absolute;
+    left: 48%;
+    top: -17%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); /* Giữ hình ảnh cân đối */
+  }
+
+  .comparison_top_right .image2 {
+    position: absolute;
+    left: 48%;
+    top: -17%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .comparison_top_right p {
+    font-style: normal;
+    font-weight: 600;
+  }
+  .comparison_top_right select {
+    background-color: #b88e2f;
+    width: 182px;
+    height: 39px;
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    border-top: 1px solid #ddd; /* Giữ viền trên */
+    border-bottom: 1px solid #ddd; /* Giữ viền dưới */
+    border-left: none; /* Xóa viền trái */
+    border-right: none; /* Xóa viền phải */
+    margin: 90px;
+  }
+  table .weight {
+    font-weight: 600;
+  }
+
+  td {
+    padding: 20px;
+    text-align: left;
+    border-right: 1px solid #ddd;
+    width: 400px;
+    text-align: center;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  /* Bỏ viền trái của cột đầu tiên */
+  td:first-child,
+  th:first-child {
+    border-left: none;
+  }
+
+  /* Bỏ viền phải của cột cuối cùng */
+  td:last-child,
+  th:last-child {
+    border-right: none;
+  }
 }
 
-.logo {
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  width: 380px;
-  text-align: center;
-  color: black;
-}
-
-.link {
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  width: 380px;
-  text-align: center;
-  color: black;
-  word-spacing: 40px;
-}
-
-.icon {
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  width: 380px;
-  text-align: center;
-  color: black;
-  word-spacing: 30px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  z-index: 10;
-}
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-
-}
-
-.breadcrumbs {
+.comparison {
   margin: auto;
 }
-.breadcrumbs .banner_breadcrumbs img {
+.comparison .banner_comparison img {
   width: 100%;
   position: relative;
 }
-.breadcrumbs .text {
+.comparison .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   top: 25%;
   right: 45%;
   padding: 20px;
 }
-.breadcrumbs .text h3 {
+.comparison .text h3 {
   text-align: center;
 }
-.breadcrumbs .text a {
+.comparison .text a {
   text-decoration: none;
   color: black;
 }
-.breadcrumbs .text .home_breadcrumbs {
+.comparison .text .home_comparison {
   font-weight: 1000;
 }
-.breadcrumbs .text i {
+.comparison .text i {
   margin: 5px;
 }
-
-.under_banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: rgb(251, 221, 182);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-}
-.under_banner .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-.under_banner .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.under_banner .show {
-  padding: 10px;
-}
-.under_banner .input_show {
-  width: 55px;
-  padding: 10px;
-}
-.under_banner .input_short_by {
-  width: 155px;
-  padding: 10px;
-}
-
-._hero {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 40px;
-}
-._hero .img-banner img {
-  width: 100%;
-}
-
-.info {
-  position: absolute;
-  top: 55%;
-  right: 13%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: #fff3e3;
-  padding: 53px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-.info h1 {
-  font-size: 52px;
-  margin-bottom: 10px;
-  color: #bd8150;
-  padding: 20px 0;
-}
-.info .text-1 p {
-  font-weight: bold;
-  font-size: 16px;
-}
-.info .text-2 {
-  font-size: 16px;
-  color: #000;
-}
-.info .button-header {
-  margin-top: 50px;
-}
-.info .button-hero-header {
-  background: #c78855;
-  color: white;
-  padding: 25px 50px;
-  border: none;
-  cursor: pointer;
-}
-
-.comparison {
-  margin: 0 54px;
-}
-
-.comparison_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 96px;
-}
-.comparison_top .comparison_top_left {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-}
-.comparison_top .comparison_title {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 126.5%;
-}
-.comparison_top .view_comparison {
-  font-size: 20px;
-  font-weight: 500;
-  color: rgb(188, 180, 180);
-  display: inline-block; /* Giúp phần tử không xuống dòng */
-  border-bottom: 1px solid rgb(188, 180, 180);
-  padding-bottom: 2px; /* Khoảng cách giữa chữ và gạch chân */
-  text-align: center;
-  white-space: nowrap; /* Ngăn text xuống dòng */
-}
-
-.comparison_top_mid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-.comparison_top_mid p,
-.comparison_top_mid .price {
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.comparison_mid_left,
-.comparison_top_right {
-  position: relative; /* Cần thêm vào */
-}
-
-.comparison_mid_left .bgImage,
-.comparison_top_right .bgImage2 {
-  width: 100%; /* Đảm bảo ảnh nền không bị lệch */
-}
-
-.comparison_mid_left .image {
-  position: absolute;
-  left: 48%;
-  top: -17%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); /* Giữ hình ảnh cân đối */
-}
-
-.comparison_top_right .image2 {
-  position: absolute;
-  left: 48%;
-  top: -17%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.comparison_top_right p {
-  font-style: normal;
-  font-weight: 600;
-}
-.comparison_top_right select {
-  background-color: #b88e2f;
-  width: 182px;
-  height: 39px;
-  color: azure;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 90%;
-  border-top: 1px solid #ddd; /* Giữ viền trên */
-  border-bottom: 1px solid #ddd; /* Giữ viền dưới */
-  border-left: none; /* Xóa viền trái */
-  border-right: none; /* Xóa viền phải */
-  margin: 90px;
-}
-table .weight {
-  font-weight: 600;
-}
-
-td {
-  padding: 20px;
-  text-align: left;
-  border-right: 1px solid #ddd;
-  width: 400px;
-  text-align: center;
-}
-
-th {
-  font-weight: bold;
-}
-
-/* Bỏ viền trái của cột đầu tiên */
-td:first-child,
-th:first-child {
-  border-left: none;
-}
-
-/* Bỏ viền phải của cột cuối cùng */
-td:last-child,
-th:last-child {
-  border-right: none;
-  }
