@@ -1129,9 +1129,8 @@ ul li button:hover {
 }
 
 .product-info {
-  padding: 16px 0;
+  margin: 22px 16px;
   text-align: left;
-  padding-left: 16px;
 }
 
 .product-name {
