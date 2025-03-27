@@ -1765,11 +1765,19 @@ th:last-child {
   border-radius: 10px;
   border: 1px solid #9f9f9f;
   background: #fff;
-  width: 311px;
+  width: 100%;
   height: 58px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-bottom: 40px;
+  padding: 10px;
+}
+.blog .categoris .khoi-search i {
+  position: absolute;
+  font-size: 19px;
+  -webkit-transform: translate(-170%, 105%);
+          transform: translate(-170%, 105%);
+  cursor: pointer;
 }
 .blog .categoris .khoi-search p {
   color: #000;
@@ -1845,4 +1853,40 @@ th:last-child {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.abc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.abc .categoris-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 41px;
+}
+.abc .categoris-left a {
+  color: #9f9f9f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.abc .categoris-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 41px;
 }
