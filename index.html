@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CODEFARM - 7-1 Pattern</title>
+    <title>404 Shop</title>
     <!-- font -->
 
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- font -->
 
     <!-- icons -->
 
@@ -15,69 +21,352 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <!-- Start banner -->
-    <section class="_hero">
-      <div class="img-banner">
-        <img src="img/banner_home_404_shop.png" alt="" />
-      </div>
-      <div class="info">
-        <div class="text-1">
-          <p>New Arrival</p>
-        </div>
-        <h1>Discover Our <br />New Collection</h1>
+    <header>
+      <div class="header">
+        <!-- ô 1 -->
+        <div class="logo">
+          <a href="./index.html"
+            ><span
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 80 L50 20 L90 80"
+                  stroke="#B8860B"
+                  stroke-width="3"
+                  fill="none"
+                />
+                <path
+                  d="M40 80 L50 60 L60 80"
+                  stroke="#B8860B"
+                  stroke-width="3"
+                  fill="none"
+                />
+              </svg>
 
-        <div class="text-2">
+              Furino</span
+            ></a
+          >
+        </div>
+        <!-- ô 2 -->
+        <div class="link">
+          <a href="">Home</a>
+          <a href="">Shop</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+        <!-- ô 3 -->
+        <div class="icon">
+          <a href=""> <i class="fa-solid fa-person"></i></a>
+          <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+
+          <a href=""> <i class="fa-solid fa-heart"></i></a>
+          <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="_hero">
+        <div class="img-banner">
+          <img src="img/banner_home_404_shop.png" alt="" />
+        </div>
+        <div class="info">
+          <div class="text-1">
+            <p>New Arrival</p>
+          </div>
+          <h1>Discover Our <br />New Collection</h1>
+
+          <div class="text-2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+          </div>
+          <div class="button-header">
+            <button class="button-hero-header">Buy now</button>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="category-text">
+          <h2>Browse The Range</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+          <div class="category-card">
+            <a href="#"><img src="./img/image 100.png" alt="" /></a>
+            <a href=""> <p>Dining</p></a>
+          </div>
+
+          <div class="category-card">
+            <img src="./img/image 101.png" alt="" />
+            <a href=""> <p>Living</p></a>
+          </div>
+
+          <div class="category-card">
+            <img src="./img/image 106.png" alt="" />
+            <a href=""> <p>Bedroom</p></a>
+          </div>
+        </div>
+      </section>
+      <!-- Product List Shop Page -->
+      <section class="product-list">
+        <h2>Our Products</h2>
+        <div class="product-list-content">
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#"
+                ><img
+                  src="assets/imgs/product-list/Images.png"
+                  alt="Syltherine"
+              /></a>
+              <span class="discount-badge">-30%</span>
+              <!-- <div class="overlay">
+                <button class="add-to-cart">Add to cart</button>
+                <div class="actions">
+                  <span class="share"> Share</span>
+                  <span class="compare"> Compare</span>
+                  <span class="like"> Like</span>
+                </div>
+              </div> -->
+            </div>
+            <div class="product-info">
+              <a href="#"> <h3 class="product-name">Syltherine</h3></a>
+              <p class="product-description">Stylish cafe chair</p>
+              <div class="product-price">
+                <span class="price-current">Rp 2.500.000</span>
+                <span class="price-old">Rp 3.500.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#">
+                <img
+                  src="assets/imgs/product-list/Images (1).png"
+                  alt="Leviosa"
+              /></a>
+            </div>
+            <div class="product-info">
+              <a href="#"> <h3 class="product-name">Leviosa</h3></a>
+              <p class="product-description">Stylish cafe chair</p>
+              <div class="product-price">
+                <span class="price-current">Rp 2.500.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#">
+                <img
+                  src="assets/imgs/product-list/image 3.png"
+                  alt="Syltherine"
+              /></a>
+              <span class="discount-badge">-50%</span>
+            </div>
+            <div class="product-info">
+              <a href="#"><h3 class="product-name">Lolito</h3></a>
+              <p class="product-description">Luxury big sofa</p>
+              <div class="product-price">
+                <span class="price-current">Rp 7.000.000</span>
+                <span class="price-old">Rp 14.000.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#"
+                ><img
+                  src="assets/imgs/product-list/Images (2).png"
+                  alt="Respira"
+              /></a>
+              <span class="new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <a href="#"> <h3 class="product-name">Respira</h3></a>
+              <p class="product-description">Outdoor bar table and stool</p>
+              <div class="product-price">
+                <span class="price-current">Rp 500.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#"
+                ><img src="assets/imgs/product-list/image 8.png" alt="Grifo"
+              /></a>
+            </div>
+            <div class="product-info">
+              <a href="#"> <h3 class="product-name">Grifo</h3></a>
+              <p class="product-description">Night lamp</p>
+              <div class="product-price">
+                <span class="price-current">Rp 1.500.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#">
+                <img src="assets/imgs/product-list/image 6.png" alt="Muggo"
+              /></a>
+              <span class="new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <a href="#"> <h3 class="product-name">Muggo</h3></a>
+              <p class="product-description">Small mug</p>
+              <div class="product-price">
+                <span class="price-current">Rp 150.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#">
+                <img src="assets/imgs/product-list/image 3.png" alt="Pingky"
+              /></a>
+              <span class="discount-badge">-50%</span>
+            </div>
+            <div class="product-info">
+              <a href="#"><h3 class="product-name">Pingky</h3></a>
+              <p class="product-description">Cute bed set</p>
+              <div class="product-price">
+                <span class="price-current">Rp 7.000.000</span>
+                <span class="price-old">Rp 14.000.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <a href="#">
+                <img src="assets/imgs/product-list/image 1.png" alt="Potty"
+              /></a>
+              <span class="new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <a href="#"> <h3 class="product-name">Potty</h3></a>
+              <p class="product-description">Minimalist flower pot</p>
+              <div class="product-price">
+                <span class="price-current">Rp 500.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-show-more">
+          <a href="./shop.html">Show More</a>
+        </div>
+      </section>
+      <!-- Decor Shop PagePage -->
+      <section class="decor">
+        <div class="decor-info">
+          <h2>
+            50+ Beautiful rooms <br />
+            inspiration
+          </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
-            Tempore tempora iusto quidem maxime reprehenderit quasi, velit
-            nostrum <br />illum odio ullam.
+            Our designer already made a lot of beautiful <br />prototipe of
+            rooms that inspire you
+          </p>
+          <button>Explore More</button>
+        </div>
+        <div class="decor-img">
+          <img src="assets/imgs/decor/decor1.png" alt="" />
+          <img src="assets/imgs/decor/decor2.png" alt="" />
+          <div class="decor-img-info">
+            <div class="decor-img-stt">
+              <p>01</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="2"
+                viewBox="0 0 27 2"
+                fill="none"
+              >
+                <path d="M0 1H27" stroke="#616161" />
+              </svg>
+              <p>Bed Room</p>
+            </div>
+
+            <a href="#"><h3 class="decor-img-info-title">Inner Peace</h3></a>
+          </div>
+          <div class="decor-img-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collections Shop Page -->
+      <section class="collections">
+        <div class="collection-title">
+          <p>Share your setup with</p>
+          <h2>#FuniroFurniture</h2>
+        </div>
+        <div class="collection-img">
+          <div class="item1">
+            <img src="assets/imgs/collections/img1.png" alt="" />
+          </div>
+          <div class="item2">
+            <img src="assets/imgs/collections/img2.png" alt="" />
+          </div>
+          <div class="item3">
+            <img src="assets/imgs/collections/img3.png" alt="" />
+          </div>
+          <div class="item4">
+            <img src="assets/imgs/collections/img4.png" alt="" />
+          </div>
+          <div class="item5">
+            <img src="assets/imgs/collections/img5.png" alt="" />
+          </div>
+          <div class="item6">
+            <img src="assets/imgs/collections/img6.png" alt="" />
+          </div>
+          <div class="item7">
+            <img src="assets/imgs/collections/img7.png" alt="" />
+          </div>
+          <div class="item8">
+            <img src="assets/imgs/collections/img8.png" alt="" />
+          </div>
+          <div class="item9">
+            <img src="assets/imgs/collections/img9.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-column colum1">
+          <h2>Funiro.</h2>
+          <p>
+            400 University Drive Suite 200 Coral <br />Gables, <br />
+            FL 33134 USA
           </p>
         </div>
-        <div class="button-header">
-          <button class="button-hero-header">buy now</button>
+        <div class="footer-column colum2">
+          <h4>Links</h4>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">Shop</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Contact</a></p>
+        </div>
+        <div class="footer-column colum3">
+          <h4>Help</h4>
+          <p><a href="#">Payment Options</a></p>
+          <p><a href="#">Returns</a></p>
+          <p><a href="#">Privacy Policies</a></p>
+        </div>
+        <div class="footer-column colum4">
+          <h4>Newsletter</h4>
+          <input type="email" placeholder="Enter Your Email Address" />
+          <button>SUBSCRIBE</button>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-line">2023 furino. All rights reverved</p>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
-		<!-- icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<!-- bootstrap -->
-
-		<!-- css -->
-		<link rel="stylesheet" href="./assets/css/main.css" />
-	</head>
-	<body>
-	<!-- header -->
-	<header>
-		
-		<div class="header">
-			<!-- ô 1 -->
-			<div class="logo">
-				<span><svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M10 80 L50 20 L90 80" stroke="#B8860B" stroke-width="3" fill="none"/>
-					<path d="M40 80 L50 60 L60 80" stroke="#B8860B" stroke-width="3" fill="none"/>
-				</svg>
-				
-				
-				Furino</span>
-			</div>
-			<!-- ô 2 -->
-			<div class="link">
-				<a href="">home</a>
-				<a href="">shop</a>
-				<a href="">about</a>
-				<a href="">contact</a>
-
-			</div>
-			<!-- ô 3 -->
-			<div class="icon">
-				<i class="fa-solid fa-person"></i>
-				<i class="fa-solid fa-magnifying-glass"></i>
-				<i class="fa-solid fa-heart"></i>
-				<i class="fa-solid fa-cart-shopping"></i>
-			</div>
-	    </div>
-	</header>
-	<!-- header -->
-	</body>
 </html>
