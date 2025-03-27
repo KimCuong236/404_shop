@@ -2,8 +2,9 @@
   width: 1440px;
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  position: relative;
+}
+.collections {
+  margin-bottom: 50px;
 }
 .collection-title {
   text-align: center;
@@ -30,7 +31,6 @@
   /* grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr; */
   gap: 16px;
-  position: absolute;
   animation: slide 10s linear infinite alternate;
 }
 @keyframes slide {

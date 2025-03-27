@@ -26,6 +26,9 @@
     border-radius: 2px;
     border: none;
   }
+  button:hover {
+    background: #bd8150;
+  }
 }
 .decor-img {
   padding: 42px 0;
@@ -66,6 +69,7 @@
     right: 35vw;
     bottom: 10%;
     transform: translate(12%, -12%);
+    cursor: pointer;
 
     i {
       color: #fff;

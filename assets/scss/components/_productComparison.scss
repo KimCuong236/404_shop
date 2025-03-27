@@ -67,17 +67,22 @@
 
 .comparison_top_right {
   p {
-    // font-size: 24px;
+    color: #000;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
+    line-height: 126.5%; /* 30.36px */
+    padding-bottom: 14px;
   }
   select {
     background-color: #b88e2f;
-    width: 182px;
-    height: 39px;
-    color: azure;
-    padding: 10px;
-    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 126.5%; /* 17.71px */
+    border-radius: 6px;
+    padding: 7px 18px;
   }
 }
 table {

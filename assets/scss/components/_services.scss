@@ -1,0 +1,33 @@
+.services {
+  background: #faf3ea;
+  padding: 100px 53px;
+}
+
+.services-box {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  i {
+    font-size: 60px;
+  }
+  .box-text {
+    h3 {
+      color: #242424;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 37.5px */
+    }
+    p {
+      color: var(--Color-Gray-3, #898989);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 30px */
+    }
+  }
+}

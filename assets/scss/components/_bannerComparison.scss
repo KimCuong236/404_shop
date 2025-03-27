@@ -1,4 +1,4 @@
-.comparison {
+.breadcrum_comparison {
   margin: auto;
   .banner_comparison img {
     width: 100%;
@@ -8,10 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: absolute;
 
     top: 25%;
-    right: 45%;
+    right: 40%;
     padding: 20px;
     h3 {
       text-align: center;
@@ -28,4 +29,7 @@
       margin: 5px;
     }
   }
+}
+.text_link {
+  text-align: center;
 }

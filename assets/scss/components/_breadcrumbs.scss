@@ -1,63 +1,139 @@
 .breadcrumbs {
+  position: relative;
+  width: 100%;
   margin: auto;
+
   .banner_breadcrumbs img {
     width: 100%;
-    position: relative;
+    height: auto;
   }
+
   .text {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-
-    top: 25%;
-    right: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
+    text-align: center;
+
     h3 {
-      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
     }
+
     a {
       text-decoration: none;
       color: black;
-      // font-family: "Poppins", sans-serif;
+      font-weight: 500;
     }
+
     .home_breadcrumbs {
-      font-weight: 1000;
+      font-weight: 700;
     }
+
     i {
       margin: 5px;
     }
   }
 }
 
-// =========== phần dưới của banner ============
+/* =========== phần dưới của banner ============ */
 
 .under_banner {
   display: flex;
-  justify-content: space-around;
-  // padding-top: 5px;
-  background-color: rgb(251, 221, 182);
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  background: #faf3ea;
+  padding: 15px 30px;
+
   .left {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
   }
+
   .right {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
   }
 
   .show {
-    padding: 10px;
+    padding: 8px;
+    font-size: 14px;
   }
-  .input_show {
-    width: 55px;
-    padding: 10px;
-  }
+
+  .input_show,
   .input_short_by {
-    width: 155px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .input_show {
+    width: 60px;
+  }
+
+  .input_short_by {
+    width: 160px;
+  }
+}
+
+/* === RESPONSIVE === */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .breadcrumbs .text {
+    top: 40%;
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .under_banner {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+
+    .left,
+    .right {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Mobile (<768px) */
+@media (max-width: 767px) {
+  .breadcrumbs .text {
+    top: 30%;
     padding: 10px;
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .under_banner {
+    flex-direction: column;
+    padding: 10px;
+
+    .left,
+    .right {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .input_show,
+    .input_short_by {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
