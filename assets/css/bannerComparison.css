@@ -1,0 +1,35 @@
+.comparison {
+  margin: auto;
+}
+.comparison .banner_comparison img {
+  width: 100%;
+  position: relative;
+}
+.comparison .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 25%;
+  right: 45%;
+  padding: 20px;
+}
+.comparison .text h3 {
+  text-align: center;
+}
+.comparison .text a {
+  text-decoration: none;
+  color: black;
+}
+.comparison .text .home_comparison {
+  font-weight: 1000;
+}
+.comparison .text i {
+  margin: 5px;
+}
