@@ -1430,39 +1430,205 @@ th:last-child {
   text-align: center;
 }
 
-.cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: #FAF3EA;
-  padding: 100px 53px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.contact {
+  margin: 80px 190px;
 }
 
-.class {
+.contact-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact-title .contact-title-h3 {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 7px;
+}
+.contact-title .contact-title-p {
+  color: #9f9f9f;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.box {
+.contact-content-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
-}
-.box p {
-  color: var(--Color-Gray-3, #898989);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 42px;
 }
 
+.contact-content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.contact-content-box .contact-content-box-h4 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact-content-box .contact-content-box-p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-content-right {
+  width: 635px;
+  height: 800px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.contact-content-form {
+  margin: 0 53px;
+}
+
+.contact-content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 36px;
+}
+.contact-content-form .contact-content-form-box-p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 22px;
+}
+.contact-content-form .contact-content-form-box-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  background: #fff;
+  padding: 25px 29px;
+}
+.contact-content-form textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  background: #fff;
+  resize: vertical;
+  padding: 25px 29px;
+}
+.contact-content-form .contact-content-form-box-button {
+  border-radius: 5px;
+  border: 1px solid #b88e2f;
+  background: #b88e2f;
+  padding: 14px 89px;
+  width: 237px;
+  height: 55px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-content-form .contact-content-form-box-button:hover {
+  background: #fff;
+  color: #b88e2f;
+}
+
+/* PC (>=1024px) - Giữ nguyên bố cục */
+.contact {
+  margin: 80px 190px;
+}
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .contact {
+    margin: 50px 50px;
+  }
+  .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-content-right {
+    width: 100%;
+    height: auto;
+  }
+  .contact-content-form {
+    margin: 0;
+  }
+}
+/* Mobile (<=767px) */
+@media (max-width: 767px) {
+  .contact {
+    margin: 30px 20px;
+  }
+  .contact-title-h3 {
+    font-size: 28px;
+  }
+  .contact-title-p {
+    font-size: 14px;
+  }
+  .contact-content-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact-content-box-h4 {
+    font-size: 20px;
+  }
+  .contact-content-box-p {
+    font-size: 14px;
+  }
+  .contact-content-right {
+    width: 100%;
+  }
+  .contact-content-form-box-input,
+  textarea {
+    padding: 15px;
+  }
+  .contact-content-form-box-button {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
