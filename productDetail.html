@@ -3,28 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Shop</title>
-    <!-- font -->
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- font -->
-
-    <!-- icons -->
-
-    <!-- bootstrap -->
-
-    <!-- css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
+
   <body>
     <header>
       <div class="header">
@@ -77,52 +65,155 @@
       </div>
     </header>
     <main>
-      <section class="_hero">
-        <div class="img-banner">
-          <img src="img/banner_home_404_shop.png" alt="" />
-        </div>
-        <div class="info">
-          <div class="text-1">
-            <p>New Arrival</p>
-          </div>
-          <h1>Discover Our <br />New Collection</h1>
+      <section class="breadcrumbs">
+        <div class="banner_breadcrumbs">
+          <img src="img/_breadcrumbs.png" alt="" />
 
-          <div class="text-2">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis.
-            </p>
-          </div>
-          <div class="button-header">
-            <button class="button-hero-header">Buy now</button>
+          <div class="text">
+            <div class="text_link">
+              <h3>Product Deatil</h3>
+              <div class="text_home">
+                <a href="" class="home_breadcrumbs">Home</a
+                ><i class="fa-solid fa-chevron-right"></i>
+                <a href="">Product Deatil</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="category">
-        <div class="category-text">
-          <h2>Browse The Range</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+      <!-- Product Detail -->
+      <section class="detail">
         <div class="card">
-          <div class="category-card">
-            <a href="#"><img src="./img/image 100.png" alt="" /></a>
-            <a href="#"> <p class="category-card-p">Dining</p></a>
-          </div>
+          <!-- khối ảnh card -->
+          <div class="card-img">
+            <div class="img-collum">
+              <img src="./img/img-delia/cl-1.png" alt="" />
+              <img src="./img/img-delia/cl-2.png" alt="" />
+              <img src="./img/img-delia/cl-3.png" alt="" />
+              <img src="./img/img-delia/cl-4.png" alt="" />
+            </div>
 
-          <div class="category-card">
-            <a href="#"> <img src="./img/image 101.png" alt="" /></a>
-            <a href="#"> <p class="category-card-p">Living</p></a>
+            <div class="main-collum">
+              <img src="./img/img-delia/main-img.png" alt="" />
+            </div>
           </div>
+          <!-- khối content-card -->
+          <div class="card-content">
+            <h3>Asgaard sofa</h3>
+            <p class="price">Rs. 250,000.00</p>
+            <span class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </span>
+            <span class="customer">5 Customer Review</span>
+            <p class="describe">
+              Setting the bar as one of the loudest speakers in its class, the
+              <br />
+              Kilburn is a compact, stout-hearted hero with a well-balanced
+              <br />audio which boasts a clear midrange and extended highs for a
+              <br />
+              sound.
+            </p>
 
-          <div class="category-card">
-            <a href="#"> <img src="./img/image 106.png" alt="" /></a>
-            <a href="#"> <p class="category-card-p">Bedroom</p></a>
+            <p class="card-content-color-p">Size</p>
+            <div class="size">
+              <button class="c-size">L</button>
+              <button class="c-size">XL</button>
+              <button class="c-size">XS</button>
+            </div>
+
+            <p class="card-content-color-p">Color</p>
+            <div class="color">
+              <div class="color-circle"></div>
+              <div class="color-circle"></div>
+              <div class="color-circle"></div>
+            </div>
+
+            <div class="product-actions">
+              <div class="quantity-selector">
+                <button onclick="changeQuantity(-1)">-</button>
+                <input
+                  type="text"
+                  id="quantity"
+                  value="1"
+                  readonly
+                  title="thechon"
+                />
+                <button onclick="changeQuantity(1)">+</button>
+              </div>
+              <button>Add To Cart</button>
+              <a href="./productComparison.html"><button>+ Compare</button></a>
+            </div>
+
+            <div class="product-information">
+              <div class="info-row">
+                <span>SKU</span>
+                <span>Category</span>
+                <span>Tags</span>
+                <span>Share</span>
+              </div>
+              <div class="info-row">
+                <span>25901</span>
+                <span>Sofas</span>
+                <div class="tags">
+                  <span class="tag">Sofa</span>
+                  <span class="tag">Chair</span>
+                  <span class="tag">Home</span>
+                  <span class="tag">Shop</span>
+                </div>
+                <div class="social-icons">
+                  <a href="#" title="linkface"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" title="link"
+                    ><i class="fa-brands fa-invision"></i
+                  ></a>
+                  <a href="#" title="link"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- Product List Shop Page -->
+      <section class="product-detail-info">
+        <div class="product-detail-info-title">
+          <h3 class="product-detail-info-title-h3">Description</h3>
+          <h3 class="product-detail-info-title-h3">Additional Information</h3>
+          <h3 class="product-detail-info-title-h3">Reviews [5]</h3>
+        </div>
+        <div class="product-detail-info-p">
+          <p>
+            Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
+            portable active stereo speaker takes the unmistakable look and sound
+            of Marshall, unplugs the chords, and takes the show on the road.
+          </p>
+          <p>
+            Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+            vintage styled engineering. Setting the bar as one of the loudest
+            speakers in its class, the Kilburn is a compact, stout-hearted hero
+            with a well-balanced audio which boasts a clear midrange and
+            extended highs for a sound that is both articulate and pronounced.
+            The analogue knobs allow you to fine tune the controls to your
+            personal preferences while the guitar-influenced leather strap
+            enables easy and stylish travel.
+          </p>
+        </div>
+        <div class="product-detail-info-img">
+          <div class="product-detail-info-img-img">
+            <img src="img/img-delia/Mask group.png" alt="" />
+          </div>
+          <div class="product-detail-info-img-img">
+            <img src="img/img-delia/Mask group (1).png" alt="" />
+          </div>
+        </div>
+      </section>
       <section class="product-list">
-        <h2>Our Products</h2>
+        <h2>Related Products</h2>
         <div class="product-list-content">
           <div class="product-card">
             <div class="product-image">
@@ -203,143 +294,44 @@
               </div>
             </div>
           </div>
-          <div class="product-card">
-            <div class="product-image">
-              <a href="#"
-                ><img src="assets/imgs/product-list/image 8.png" alt="Grifo"
-              /></a>
-            </div>
-            <div class="product-info">
-              <a href="#"> <h3 class="product-name">Grifo</h3></a>
-              <p class="product-description">Night lamp</p>
-              <div class="product-price">
-                <span class="price-current">Rp 1.500.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <a href="#">
-                <img src="assets/imgs/product-list/image 6.png" alt="Muggo"
-              /></a>
-              <span class="new-badge">New</span>
-            </div>
-            <div class="product-info">
-              <a href="#"> <h3 class="product-name">Muggo</h3></a>
-              <p class="product-description">Small mug</p>
-              <div class="product-price">
-                <span class="price-current">Rp 150.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <a href="#">
-                <img src="assets/imgs/product-list/image 3.png" alt="Pingky"
-              /></a>
-              <span class="discount-badge">-50%</span>
-            </div>
-            <div class="product-info">
-              <a href="#"><h3 class="product-name">Pingky</h3></a>
-              <p class="product-description">Cute bed set</p>
-              <div class="product-price">
-                <span class="price-current">Rp 7.000.000</span>
-                <span class="price-old">Rp 14.000.000</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <a href="#">
-                <img src="assets/imgs/product-list/image 1.png" alt="Potty"
-              /></a>
-              <span class="new-badge">New</span>
-            </div>
-            <div class="product-info">
-              <a href="#"> <h3 class="product-name">Potty</h3></a>
-              <p class="product-description">Minimalist flower pot</p>
-              <div class="product-price">
-                <span class="price-current">Rp 500.000</span>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="btn-show-more">
           <a href="./shop.html">Show More</a>
         </div>
       </section>
-      <!-- Decor Shop PagePage -->
-      <section class="decor">
-        <div class="decor-info">
-          <h2>
-            50+ Beautiful rooms <br />
-            inspiration
-          </h2>
-          <p>
-            Our designer already made a lot of beautiful <br />prototipe of
-            rooms that inspire you
-          </p>
-          <button>Explore More</button>
-        </div>
-        <div class="decor-img">
-          <img src="assets/imgs/decor/decor1.png" alt="" />
-          <img src="assets/imgs/decor/decor2.png" alt="" />
-          <div class="decor-img-info">
-            <div class="decor-img-stt">
-              <p>01</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="2"
-                viewBox="0 0 27 2"
-                fill="none"
-              >
-                <path d="M0 1H27" stroke="#616161" />
-              </svg>
-              <p>Bed Room</p>
+      <!-- Product Detail -->
+      <section class="services">
+        <div class="services-box">
+          <div class="box">
+            <i class="fa-solid fa-trophy"></i>
+            <div class="box-text">
+              <h3>Hight Quatily</h3>
+              <p>crafted from top materials</p>
             </div>
-
-            <a href="#"><h3 class="decor-img-info-title">Inner Peace</h3></a>
           </div>
-          <!-- <div class="decor-img-next">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div> -->
-        </div>
-      </section>
-
-      <!-- Collections Shop Page -->
-      <section class="collections">
-        <div class="collection-title">
-          <p>Share your setup with</p>
-          <h2>#FuniroFurniture</h2>
-        </div>
-        <div class="collection-img">
-          <div class="item1">
-            <img src="assets/imgs/collections/img1.png" alt="" />
+          <!-- ô 2 -->
+          <div class="box">
+            <i class="fa-solid fa-award"></i>
+            <div class="box-text">
+              <h3>Warranty Protection</h3>
+              <p>Over 2 years</p>
+            </div>
           </div>
-          <div class="item2">
-            <img src="assets/imgs/collections/img2.png" alt="" />
+          <!-- ô 3 -->
+          <div class="box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div class="box-text">
+              <h3>Free Shipping</h3>
+              <p>Order over 150 $</p>
+            </div>
           </div>
-          <div class="item3">
-            <img src="assets/imgs/collections/img3.png" alt="" />
-          </div>
-          <div class="item4">
-            <img src="assets/imgs/collections/img4.png" alt="" />
-          </div>
-          <div class="item5">
-            <img src="assets/imgs/collections/img5.png" alt="" />
-          </div>
-          <div class="item6">
-            <img src="assets/imgs/collections/img6.png" alt="" />
-          </div>
-          <div class="item7">
-            <img src="assets/imgs/collections/img7.png" alt="" />
-          </div>
-          <div class="item8">
-            <img src="assets/imgs/collections/img8.png" alt="" />
-          </div>
-          <div class="item9">
-            <img src="assets/imgs/collections/img9.png" alt="" />
+          <!-- ô 4 -->
+          <div class="box">
+            <i class="fa-solid fa-headset"></i>
+            <div class="box-text">
+              <h3>24 / 7 Support</h3>
+              <p>Dedicated support</p>
+            </div>
           </div>
         </div>
       </section>
